@@ -60,10 +60,11 @@ public class HantoGameFactory
 	public HantoGame makeHantoGame(HantoGameID gameId, HantoPlayerColor movesFirst) {
 		HantoGame game = null;
 		
+		//
 		switch (gameId) {
 		
 		case ALPHA_HANTO:
-			game = new AlphaHantoGame();
+			game = new AlphaHantoGame(movesFirst);
 		case BETA_HANTO:
 		
 		default:

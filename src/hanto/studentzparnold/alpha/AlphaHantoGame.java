@@ -8,6 +8,7 @@ import hanto.common.HantoException;
 import hanto.common.HantoGame;
 import hanto.common.HantoPiece;
 import hanto.common.HantoPieceType;
+import hanto.common.HantoPlayerColor;
 import hanto.common.MoveResult;
 
 /**
@@ -17,9 +18,10 @@ import hanto.common.MoveResult;
 public class AlphaHantoGame implements HantoGame {
 
 	/**
+	 * @param movesFirst 
 	 * 
 	 */
-	public AlphaHantoGame() {
+	public AlphaHantoGame(HantoPlayerColor movesFirst) {
 		//TODO work on this
 	}
 
@@ -30,7 +32,7 @@ public class AlphaHantoGame implements HantoGame {
 	public MoveResult makeMove(HantoPieceType pieceType, HantoCoordinate from,
 			HantoCoordinate to) throws HantoException {
 		// TODO Auto-generated method stub
-		return null;
+		return MoveResult.OK;
 	}
 
 	/* (non-Javadoc)
