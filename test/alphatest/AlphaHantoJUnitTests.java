@@ -69,4 +69,11 @@ public class AlphaHantoJUnitTests {
 		assertEquals(MoveResult.OK,result);
 	}
 	
+	/**
+	 * Makes a new Game using the Hanto Game Factory
+	 */
+	@Test(expected = HantoException.class)
+	public void makeGameAndPlaceTwoButterflies() throws HantoException{		
+		final MoveResult result = game.makeMove(HantoPieceType.BUTTERFLY, null, new AlphaHantoCoordinate(0,0));
+	}
 }

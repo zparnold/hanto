@@ -3,6 +3,8 @@
  */
 package hanto.studentzparnold.alpha;
 
+import java.util.HashMap;
+
 import hanto.common.HantoCoordinate;
 import hanto.common.HantoException;
 import hanto.common.HantoGame;
@@ -17,6 +19,9 @@ import hanto.common.MoveResult;
  */
 public class AlphaHantoGame implements HantoGame {
 
+	//class Variables
+	private HashMap<AlphaHantoCoordinate,HantoPiece> pieceMap;
+	
 	/**
 	 * @param movesFirst 
 	 * 
@@ -31,7 +36,9 @@ public class AlphaHantoGame implements HantoGame {
 	@Override
 	public MoveResult makeMove(HantoPieceType pieceType, HantoCoordinate from,
 			HantoCoordinate to) throws HantoException {
-		// TODO Auto-generated method stub
+		//So here's an idea: 
+		//Check hashmap for conflicts
+		//make sure not discontinuous
 		return MoveResult.OK;
 	}
 
